@@ -38,9 +38,7 @@ export const Display = ({data}) => {
         const future = data.forecast.forecastday.filter(day => day.date_epoch > data.forecast.forecastday[0].date_epoch);
 
         forecast = future.map(day => {
-            return <div id="future-container" style={{
-                
-            }}>
+            return <div id="future-container">
                 <div>
                     <h3>{new Date((day.date_epoch + 86400) * 1000).toString().slice(0,4)}</h3>
                     <p>Hi: {day.day.maxtemp_f}˚</p>
@@ -55,7 +53,7 @@ export const Display = ({data}) => {
     return (
         <div id="display">
            {today}
-           <div>
+           <div id="future">
             {forecast}
            </div>
         </div>

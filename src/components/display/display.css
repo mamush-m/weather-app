@@ -84,6 +84,12 @@
     font-size: 30px;
 }
 
+#future {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
 #future-container {
     margin: 20px auto;
     box-shadow: 3px -8px 9px black;
@@ -102,3 +108,4 @@
 #future-container img {
     display: inline;
 }
+
