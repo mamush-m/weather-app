@@ -29,8 +29,6 @@ export const City = ({city, setCity, setData}) => {
         }
     };
 
-    console.log(process.env)
-
 
     return (
         <div id="city-container">
