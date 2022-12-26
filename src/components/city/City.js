@@ -19,7 +19,7 @@ export const City = ({city, setCity, setData}) => {
 
     const weatherInfo = async () => {
         try {
-            const res = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=3c6b442d4bb24efcb1d85841221812&q=${city}&days=5`);
+            const res = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=${process.env.REACT_APP_KEY}&q=${city}&days=5`);
             const data = await res.json();
             console.log(data);
 
@@ -29,13 +29,15 @@ export const City = ({city, setCity, setData}) => {
         }
     };
 
+    console.log(process.env)
+
+
     return (
         <div id="city-container">
             <form onSubmit={handleSubmit}>
                 <input placeholder="City" id="city"/>
                 <input id="searchCity" type="submit" value='Search City' />
             </form>
-            
         </div>
     )
 };

@@ -8,8 +8,8 @@
 
 form {
     display: inline;
-    border: 1px solid peru;
+    border: 3px ridge peru;
     padding: 10px;
-    background-color: black;
+    background-color: white;
     margin: 50px 0 10px 0;
 }

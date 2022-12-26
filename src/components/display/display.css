@@ -1,8 +1,8 @@
 #weather-info {
     background-image: url('../../wallpapersden.com_cloudy-field-paint_3840x2160.jpg');
     /* background-color: hsla(0, 0%, 83%, 0.1); */
-    height: 60vh;
-    width: 50vw;
+    height: 60%;
+    width: 70%;
     margin: auto;
     border-radius: 6px;
     padding: 10px 10px;
@@ -31,6 +31,7 @@
     width: 30%;
     box-shadow: 3px -5px 5px black;
     background-color: cornflowerblue;
+    border-radius: 20px;
 }
 
 
@@ -41,7 +42,7 @@
 }
 
 #main-data > div {
-    box-shadow: 5px -9px 95px black;
+    /* box-shadow: 5px -9px 95px black; */
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -51,7 +52,7 @@
 }
 
 #main-data > div > * {
-    font-size: 1rem;
+    font-size: 1em;
 }
 
 #main-data #date {
