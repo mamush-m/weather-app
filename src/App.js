@@ -7,15 +7,7 @@ import key from './API/key';
 function App() {
   const [city, setCity] = useState('');
   const [data, setData] = useState();
-
   
-
-
-  // console.log(city.length);
-  // navigator.geolocation.getCurrentPosition(success => console.log(success));
-
-  // console.log(location)
-
   return (
     <div className="App">
       <h1>Weather App</h1>

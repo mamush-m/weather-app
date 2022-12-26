@@ -18,15 +18,15 @@ export const City = ({city, setCity, setData}) => {
     };
 
     const weatherInfo = async () => {
-        // try {
-            const res = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=3c6b442d4bb24efcb1d85841221812&q=${city}&days=5`);
+        try {
+            const res = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=3c6b442d4bb24efcb1d85841221812&q=${city}&days=5`);
             const data = await res.json();
             console.log(data);
 
             setData(data);
-        // }catch(err) {
-        //     console.log(err);
-        // }
+        }catch(err) {
+            console.log(err);
+        }
     };
 
     return (

@@ -8,10 +8,8 @@ export const Display = ({data}) => {
 
     if(data && data.current){
         today = <div id="weather-info">
-            {/* <h1 id="city">{data.location.name}</h1> */}
             <h3 id="city-state">{data.location.name}, {data.location.region}</h3>
             <h5 id="country">{data.location.country}</h5>
-            {/* <p>{new Date().toString().split(' ').slice(0,3).join(' ')}</p> */}
 
             <div id="data">
                 <div id="main-data">
@@ -48,24 +46,16 @@ export const Display = ({data}) => {
                     <p>Hi: {day.day.maxtemp_f}˚</p>
                     <p>Lo: {day.day.mintemp_f}˚</p>
                 </div>
-                <img src={day.day.condition.icon}/>
+                <img alt="condition icon" src={day.day.condition.icon}/>
             </div>
         })
-
-        // console.log('this is details', data.forecast.forecastday)
     }
 
-
-    // console.log('THIS IS DATA', data);
 
     return (
         <div id="display">
            {today}
-           <div style={{
-            display: 'flex',
-            // margin: 'auto',
-            // justifyContent: 'center'
-           }}>
+           <div>
             {forecast}
            </div>
         </div>
